@@ -5,11 +5,16 @@ import java.util.Observable;
 public class Editor {
 
     private EventManager eventManager;
+
+    public Editor(EventManager eventManager) {
+        this.eventManager = eventManager;
+    }
+
     void openFile(){
-        System.out.println("Файл открыт");
+        eventManager.notifyListener("Открыт файл");
     }
 
     void saveFile(){
-        System.out.println("Файл сохранен");
+        eventManager.notifyListener("Сохранен файл");
     }
 }

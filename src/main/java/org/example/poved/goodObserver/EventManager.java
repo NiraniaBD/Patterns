@@ -16,7 +16,10 @@ public class EventManager {
 
     }
 
-    void notifyListener( eventType, data){
+    void notifyListener(String data){
+        for (EventListeners event: listenerSet) {
+            event.update(data);
+        }
 
     }
 }
