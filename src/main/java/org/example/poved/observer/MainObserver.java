@@ -7,6 +7,7 @@ public class MainObserver {
         Editor editor = new Editor();
         editor.addObserver(new EmailAlertListener());
         editor.addObserver(new LoggingListener());
-
+        editor.openFile();
+        editor.saveFile();
     }
 }

@@ -1,5 +1,4 @@
 package org.example.poved.observer;
-
 import java.util.Observable;
 
 public class Editor extends Observable {
